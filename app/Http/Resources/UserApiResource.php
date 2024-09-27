@@ -12,7 +12,7 @@ class UserApiResource extends JsonResource
 
     public function __construct($status,$massage, $data)
     {
-        parent::__construct($data);
+        $this->data = $data;
         $this->status = $status;
         $this->massage = $massage;
     }
